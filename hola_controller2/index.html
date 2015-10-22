@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+    <meta charset="UTF-8">
+    <title>hola controller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <script>
+        //busca la referencia al modulo con el mismo nombre
+        angular.module("MyFirstApp").controller("FirstController",function($scope){
+            $scope.nombre = "CURSO";
+        });
+    </script>
+</head>
+<body ng-controller="FirstController">
+    {{"Hola "+ nombre}}
+</body>
+</html>
